@@ -1,7 +1,7 @@
 alert ('hello');
 console.log('this is from js file ');
 var userage = prompt('please enter your name');
- console.log ('user age' + userage);
+ console.log ('user name' + userage);
 
 var user = "ghaidaa";
 var age = 23;
