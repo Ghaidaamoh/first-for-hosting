@@ -1,8 +1,11 @@
 alert ('hello');
 console.log('this is from js file ');
+var userage = prompt('please enter your name');
+ console.log ('user name' + userage);
+
 var user = "ghaidaa";
 var age = 23;
-var salary = 500 + 150;
+var salary = 500 + 150 ;
 console.log (salary);
 
 if  (salary == 500)
@@ -33,16 +36,24 @@ if (salary ===1000 && user=='ghaidaa')
 else{
   console.log ('false');
 }
-var userage = prompt('please enter your age( from 15-20 , from 21-60) ');
- console.log ('user age' + userage);
-
- if (userage == 'from 15-20')
+var numofhost = prompt('please enter your num of host ( 1-5 , 5-10) ');
+ while(numofhost !== '1-5'&& numofhost !== '5-10'  )
+{ 
+  numofhost = prompt('please enter your num of host( 1-5, 5-10) ');
+}
+var hostnumber= prompt('please enter how many host do you want to reserve ');
+for(var i=1 ; i<=hostnumber;i++ )
+{
+  if (numofhost == '1-5')
  {
-   var image = '<img src ="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FHello-Teen-Cake-Topper-Decorations%2Fdp%2FB086KTX3LP&psig=AOvVaw2TrCtfWtsDFLiHFqA-9B9S&ust=1618486294593000&source=images&cd=vfe&ved=2ahUKEwjPwsm20f3vAhX8gv0HHb_MCt0QjRx6BAgAEAc" alt= "teenager"/>';
+   var image = '<img src ="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hostingadvice.com%2Fhow-to%2Ffree-web-hosting%2F&psig=AOvVaw3AGInYkUvpfKZCmiRdIdYG&ust=1618570377214000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDr04eLgPACFQAAAAAdAAAAABAJ" alt= "best host"/>';
    document.write(image);
  }
- else if (userage == 'from 21-60' )
+ else if (numofhost == '5-10' )
  {
-   var image2 = '<img src ="img/adults.jpg" alt= "adults"/>';
+   var image2 = '<img src ="img/hosting.jpg" alt= "hosting"/>';
    document.write(image2);
  }
+    
+}
+ 
