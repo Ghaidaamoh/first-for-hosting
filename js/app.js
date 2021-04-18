@@ -36,24 +36,53 @@ if (salary ===1000 && user=='ghaidaa')
 else{
   console.log ('false');
 }
-var numofhost = prompt('please enter your num of host ( 1-5 , 5-10) ');
- while(numofhost !== '1-5'&& numofhost !== '5-10'  )
+//var numofhost = prompt('please enter your num of host ( 1-5 , 5-10) ');
+// while(numofhost !== '1-5'&& numofhost !== '5-10'  )
+//{ 
+//  numofhost = prompt('please enter your num of host( 1-5, 5-10) ');
+//}
+//var hostnumber= prompt('please enter how many host do you want to reserve ');
+//for(var i=1 ; i<=hostnumber;i++ )
+//{
+  //if (numofhost == '1-5')
+ //{
+ //  var image = '<img src ="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hostingadvice.com%2Fhow-to%2Ffree-web-hosting%2F&psig=AOvVaw3AGInYkUvpfKZCmiRdIdYG&ust=1618570377214000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDr04eLgPACFQAAAAAdAAAAABAJ" alt= "best host"/>';
+  // document.write(image);
+ //}
+ //else if (numofhost == '5-10' )
+ //{
+   //var image2 = '<img src ="img/hosting.jpg" alt= "hosting"/>';
+  // document.write(image2);
+ //}
+    
+//}
+ function askuser (numhost)
+ {
+   var ask1 =  prompt('please enter your num of host(1-5 , 5-10)' + numhost );
+ }
+ while(ask1 !== '1-5' && ask1 !== '5-10'  )
 { 
-  numofhost = prompt('please enter your num of host( 1-5, 5-10) ');
+var ask1 = prompt('please enter your num of host( 1-5,5-10)');
 }
-var hostnumber= prompt('please enter how many host do you want to reserve ');
-for(var i=1 ; i<=hostnumber;i++ )
-{
-  if (numofhost == '1-5')
+
+ var user = function () 
+ {
+   var hostnumber= prompt('please enter how many host do you want to reserve ');
+   for(var i=1 ; i<=hostnumber;i++ )
+   {
+     if (ask1 == '1-5')
  {
    var image = '<img src ="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hostingadvice.com%2Fhow-to%2Ffree-web-hosting%2F&psig=AOvVaw3AGInYkUvpfKZCmiRdIdYG&ust=1618570377214000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDr04eLgPACFQAAAAAdAAAAABAJ" alt= "best host"/>';
    document.write(image);
  }
- else if (numofhost == '5-10' )
+ else if (ask1 == '5-10' )
  {
    var image2 = '<img src ="img/hosting.jpg" alt= "hosting"/>';
    document.write(image2);
  }
-    
-}
- 
+   }
+  
+ }
+user();
+
+
